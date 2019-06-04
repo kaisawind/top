@@ -10,7 +10,7 @@
     <img src="https://travis-ci.org/kaisawind/top.svg?branch=master" alt="Build Status">
   </a>
   <a href="https://github.com/kaisawind/top/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
+    <img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt="license">
   </a>
   <a href="https://github.com/kaisawind/top/releases">
     <img src="https://img.shields.io/github/release/kaisawind/top.svg" alt="GitHub release">
