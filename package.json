@@ -7,6 +7,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10"
