@@ -1,6 +1,8 @@
 <template>
-  <div class="el-header">
-    Hello World!
+  <div class="el-container">
+    <div class="el-header">
+      Hello World
+    </div>
   </div>
 </template>
 
@@ -11,4 +13,9 @@ export default {
 </script>
 
 <style scoped>
+.el-container {
+  width: 100%;
+  min-width: 1190px;
+  height: 99px;
+}
 </style>

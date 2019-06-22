@@ -1,18 +1,24 @@
 <template>
   <div id="app">
-    <div class="el-container">
+    <div class="container">
+      <Top />
       <Header />
+      <Main />
     </div>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import Top from './components/Top.vue'
+import Main from './components/Main.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Top,
+    Main
   }
 }
 </script>
