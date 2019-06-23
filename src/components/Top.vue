@@ -58,7 +58,7 @@ export default {
       cntime: this.getCNTime(),
       timestamp: Date.now() + '',
       browserInfos: ['N/A', 'N/A', 'N/A'],
-      IPs: ['0.0.0.0', '2409:8a15:1e57:4420:9c77:577f:350c:d5fc'],
+      IPs: ['0.0.0.0', '0000:0000:0000:0000:0000:0000:0000:0000'],
       externelIP: '0.0.0.0',
       timer: null
     }
