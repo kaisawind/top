@@ -19,12 +19,23 @@
         时&emsp;间: <span style="cursor: pointer;">{{ cntime }} <i class="el-icon-document-copy" /></span>
       </div>
     </div>
+    <div class="browser-info">
+      <div @click="clipboardTimestamp(timestamp,$event)">
+        系&nbsp;统&nbsp;版&nbsp;本: {{ browserInfos[0] }}
+      </div>
+      <div @click="clipboardTime(time,$event)">
+        浏&nbsp;&nbsp;&nbsp;览&nbsp;&nbsp;&nbsp;器: {{ browserInfos[1] }}
+      </div>
+      <div @click="clipboardCNTime(cntime,$event)">
+        浏览器版本: {{ browserInfos[2] }}
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import { setInterval } from 'timers'
-import { parseTime } from '@/utils/index.js'
+import { getBrowserInfo, parseTime } from '@/utils/index.js'
 import clipboard from '@/utils/clipboard'
 
 export default {
@@ -34,10 +45,12 @@ export default {
       time: this.getTime(),
       cntime: this.getCNTime(),
       timestamp: Date.now() + '',
+      browserInfos: [],
       timer: null
     }
   },
   mounted() {
+    this.getInfo()
     if (this.timer === null) {
       this.timer = setInterval(this.intervalCallback, 1000)
     }
@@ -79,6 +92,9 @@ export default {
     },
     clipboardCNTime(text, event) {
       clipboard(text, event)
+    },
+    getInfo() {
+      this.browserInfos = getBrowserInfo()
     }
   }
 }
@@ -130,8 +146,19 @@ export default {
 }
 .time {
   float: left;
+  min-width: 225px;
   margin-top: 10px;
   margin-left: 92px;
+  text-align: left;
+  line-height: 20px;
+  font-size: 12px;
+  font-family: Tahoma;
+}
+.browser-info {
+  float: left;
+  min-width: 150px;
+  margin-top: 10px;
+  margin-left: 20px;
   text-align: left;
   line-height: 20px;
   font-size: 12px;

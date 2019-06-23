@@ -41,3 +41,82 @@ export function parseTime(time, cFormat) {
   })
   return time_str
 }
+
+export function getOS() {
+  const sUserAgent = navigator.userAgent
+  const isWin = (navigator.platform === 'Win32') || (navigator.platform === 'Windows')
+  const isMac = (navigator.platform === 'Mac68K') || (navigator.platform === 'MacPPC') || (navigator.platform === 'Macintosh') || (navigator.platform === 'MacIntel')
+  if (isMac) return 'Mac'
+  const isUnix = (navigator.platform === 'X11') && !isWin && !isMac
+  if (isUnix) return 'Unix'
+  const isLinux = (String(navigator.platform).indexOf('Linux') > -1)
+  if (isLinux) return 'Linux'
+  if (isWin) {
+    const isWin2K = sUserAgent.indexOf('Windows NT 5.0') > -1 || sUserAgent.indexOf('Windows 2000') > -1
+    if (isWin2K) return 'Windows 2000'
+    const isWinXP = sUserAgent.indexOf('Windows NT 5.1') > -1 || sUserAgent.indexOf('Windows XP') > -1
+    if (isWinXP) return 'Windows XP'
+    const isWin2003 = sUserAgent.indexOf('Windows NT 5.2') > -1 || sUserAgent.indexOf('Windows 2003') > -1
+    if (isWin2003) return 'Windows 2003'
+    const isWinVista = sUserAgent.indexOf('Windows NT 6.0') > -1 || sUserAgent.indexOf('Windows Vista') > -1
+    if (isWinVista) return 'Windows Vista'
+    const isWin7 = sUserAgent.indexOf('Windows NT 6.1') > -1 || sUserAgent.indexOf('Windows 7') > -1
+    if (isWin7) return 'Windows 7'
+    const isWin10 = sUserAgent.indexOf('Windows NT 10') > -1 || sUserAgent.indexOf('Windows 10') > -1
+    if (isWin10) return 'Windows 10'
+  }
+  return 'other'
+}
+
+export function getBrowserInfo() {
+  const agent = navigator.userAgent
+  const arr = []
+  const system = getOS()
+  arr.push(system)
+  const regStr_edge = /Edge\/[\d.]+/gi
+  const regStr_ie = /Trident\/[\d.]+/gi
+  const regStr_ff = /Firefox\/[\d.]+/gi
+  const regStr_chrome = /Chrome\/[\d.]+/gi
+  const regStr_saf = /Safari\/[\d.]+/gi
+  const regStr_opera = /Opr\/[\d.]+/gi
+  // IE
+  if (agent.indexOf('Trident') > 0) {
+    arr.push(agent.match(regStr_ie)[0].split('/')[0])
+    arr.push(agent.match(regStr_ie)[0].split('/')[1])
+    return arr
+  }
+  // Edge
+  if (agent.indexOf('Edge') > 0) {
+    arr.push(agent.match(regStr_edge)[0].split('/')[0])
+    arr.push(agent.match(regStr_edge)[0].split('/')[1])
+    return arr
+  }
+  // firefox
+  if (agent.indexOf('Firefox') > 0) {
+    arr.push(agent.match(regStr_ff)[0].split('/')[0])
+    arr.push(agent.match(regStr_ff)[0].split('/')[1])
+    return arr
+  }
+  // Opera
+  if (agent.indexOf('Opr') > 0) {
+    arr.push(agent.match(regStr_opera)[0].split('/')[0])
+    arr.push(agent.match(regStr_opera)[0].split('/')[1])
+    return arr
+  }
+  // Safari
+  if (agent.indexOf('Safari') > 0 && agent.indexOf('Chrome') < 0) {
+    arr.push(agent.match(regStr_saf)[0].split('/')[0])
+    arr.push(agent.match(regStr_saf)[0].split('/')[1])
+    return arr
+  }
+  // Chrome
+  if (agent.indexOf('Chrome') > 0) {
+    arr.push(agent.match(regStr_chrome)[0].split('/')[0])
+    arr.push(agent.match(regStr_chrome)[0].split('/')[1])
+    return arr
+  } else {
+    arr.push('请更换主流浏览器，例如chrome,firefox,opera,safari,IE,Edge!')
+    arr.push('请更换主流浏览器，例如chrome,firefox,opera,safari,IE,Edge!')
+    return arr
+  }
+}
