@@ -9,25 +9,36 @@
       </a>
     </div>
     <div class="time">
-      <div @click="clipboardTimestamp(timestamp,$event)">
+      <div @click="clipboard(timestamp,$event)">
         时间戳: <span style="cursor: pointer;">{{ timestamp }} <i class="el-icon-document-copy" /></span>
       </div>
-      <div @click="clipboardTime(time,$event)">
+      <div @click="clipboard(time,$event)">
         时&emsp;间: <span style="cursor: pointer;">{{ time }} <i class="el-icon-document-copy" /></span>
       </div>
-      <div @click="clipboardCNTime(cntime,$event)">
+      <div @click="clipboard(cntime,$event)">
         时&emsp;间: <span style="cursor: pointer;">{{ cntime }} <i class="el-icon-document-copy" /></span>
       </div>
     </div>
     <div class="browser-info">
-      <div @click="clipboardTimestamp(timestamp,$event)">
+      <div>
         系&nbsp;统&nbsp;版&nbsp;本: {{ browserInfos[0] }}
       </div>
-      <div @click="clipboardTime(time,$event)">
+      <div>
         浏&nbsp;&nbsp;&nbsp;览&nbsp;&nbsp;&nbsp;器: {{ browserInfos[1] }}
       </div>
-      <div @click="clipboardCNTime(cntime,$event)">
+      <div>
         浏览器版本: {{ browserInfos[2] }}
+      </div>
+    </div>
+    <div class="ips-info">
+      <div @click="clipboard(IPs[0],$event)">
+        内网IPv4: <span style="cursor: pointer;">{{ IPs[0] }} <i class="el-icon-document-copy" /></span>
+      </div>
+      <div @click="clipboard(IPs[1],$event)">
+        内网IPv6: <span style="cursor: pointer;">{{ IPs[1] }} <i class="el-icon-document-copy" /></span>
+      </div>
+      <div @click="clipboard(IPs[1],$event)">
+        外网IP&nbsp;&nbsp;&nbsp;: <span style="cursor: pointer;">{{ externelIP }} <i class="el-icon-document-copy" /></span>
       </div>
     </div>
   </div>
@@ -37,6 +48,7 @@
 import { setInterval } from 'timers'
 import { getBrowserInfo, parseTime } from '@/utils/index.js'
 import clipboard from '@/utils/clipboard'
+import { getIPs } from '@/utils/ips'
 
 export default {
   name: 'Top',
@@ -45,12 +57,20 @@ export default {
       time: this.getTime(),
       cntime: this.getCNTime(),
       timestamp: Date.now() + '',
-      browserInfos: [],
+      browserInfos: ['N/A', 'N/A', 'N/A'],
+      IPs: ['0.0.0.0', '2409:8a15:1e57:4420:9c77:577f:350c:d5fc'],
+      externelIP: '0.0.0.0',
       timer: null
     }
   },
   mounted() {
     this.getInfo()
+    getIPs((IPs) => {
+      if (IPs.length === 2) {
+        this.IPs = IPs
+      }
+    })
+    this.externelIP = window.returnCitySN['cip']
     if (this.timer === null) {
       this.timer = setInterval(this.intervalCallback, 1000)
     }
@@ -64,6 +84,7 @@ export default {
     }
   },
   methods: {
+    clipboard,
     intervalCallback() {
       this.getTime()
       this.getCNTime()
@@ -84,17 +105,11 @@ export default {
       this.timestamp = date.getTime()
       return date.getTime() + ''
     },
-    clipboardTimestamp(text, event) {
-      clipboard(text, event)
-    },
-    clipboardTime(text, event) {
-      clipboard(text, event)
-    },
-    clipboardCNTime(text, event) {
-      clipboard(text, event)
-    },
     getInfo() {
-      this.browserInfos = getBrowserInfo()
+      const browserInfos = getBrowserInfo()
+      if (browserInfos.length === 3) {
+        this.browserInfos = browserInfos
+      }
     }
   }
 }
@@ -157,6 +172,16 @@ export default {
 .browser-info {
   float: left;
   min-width: 150px;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-align: left;
+  line-height: 20px;
+  font-size: 12px;
+  font-family: Tahoma;
+}
+.ips-info {
+  float: left;
+  min-width: 310px;
   margin-top: 10px;
   margin-left: 20px;
   text-align: left;
