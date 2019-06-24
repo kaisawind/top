@@ -2,7 +2,7 @@
   <div class="el-container">
     <div class="el-header">
       <div class="search">
-        <div class="search-logo">
+        <div class="search-logo" @click="onhandleLogo()">
           <img class="logo-img" src="@/assets/github-394322_960_720.png">
         </div>
         <div class="input">
@@ -26,6 +26,9 @@ export default {
   methods: {
     onhandleSearch(query) {
       window.open('https://github.com/search?q=' + query, '_blank')
+    },
+    onhandleLogo() {
+      window.open('https://github.com', '_blank')
     }
   }
 }
@@ -47,15 +50,17 @@ export default {
 }
 .search {
   position: absolute;
-  min-width: 746px;
+  min-width: 546px;
 }
 .search-logo {
   display: inline-block;
+  cursor: pointer;
 }
 .logo-img {
-  width: 128px;
+  width: 100px;
   height: 40px;
-  margin-right: 8px;
+  margin-right: 18px;
+  margin-left: 10px;
   vertical-align: bottom;
 }
 .input {
