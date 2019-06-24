@@ -8,7 +8,7 @@
         设为首页
       </a>
     </div>
-    <div class="time">
+    <div class="info time">
       <div @click="clipboard(timestamp,$event)">
         时间戳: <span style="cursor: pointer;">{{ timestamp }} <i class="el-icon-document-copy" /></span>
       </div>
@@ -19,7 +19,7 @@
         时&emsp;间: <span style="cursor: pointer;">{{ cntime }} <i class="el-icon-document-copy" /></span>
       </div>
     </div>
-    <div class="browser-info">
+    <div class="info browser">
       <div>
         系&nbsp;统&nbsp;版&nbsp;本: {{ browserInfos[0] }}
       </div>
@@ -30,15 +30,23 @@
         浏览器版本: {{ browserInfos[2] }}
       </div>
     </div>
-    <div class="ips-info">
+    <div class="info ips">
       <div @click="clipboard(IPs[0],$event)">
         内网IPv4: <span style="cursor: pointer;">{{ IPs[0] }} <i class="el-icon-document-copy" /></span>
       </div>
       <div @click="clipboard(IPs[1],$event)">
         内网IPv6: <span style="cursor: pointer;">{{ IPs[1] }} <i class="el-icon-document-copy" /></span>
       </div>
-      <div @click="clipboard(IPs[1],$event)">
-        外网IP&nbsp;&nbsp;&nbsp;: <span style="cursor: pointer;">{{ externelIP }} <i class="el-icon-document-copy" /></span>
+      <div @click="clipboard(citySN['cip'],$event)">
+        外&nbsp;网&nbsp;&nbsp;IP: <span style="cursor: pointer;">{{ citySN['cip'] }} <i class="el-icon-document-copy" /></span>
+      </div>
+    </div>
+    <div class="info city">
+      <div>
+        编&emsp;&emsp;码: {{ citySN['cid'] }}
+      </div>
+      <div>
+        地理位置: {{ citySN['cname'] }}
       </div>
     </div>
   </div>
@@ -59,7 +67,11 @@ export default {
       timestamp: Date.now() + '',
       browserInfos: ['N/A', 'N/A', 'N/A'],
       IPs: ['0.0.0.0', '0000:0000:0000:0000:0000:0000:0000:0000'],
-      externelIP: '0.0.0.0',
+      citySN: {
+        'cip': '0.0.0.0',
+        'cid': '',
+        'cname': ''
+      },
       timer: null
     }
   },
@@ -70,7 +82,7 @@ export default {
         this.IPs = IPs
       }
     })
-    this.externelIP = window.returnCitySN['cip']
+    this.citySN = window.returnCitySN
     if (this.timer === null) {
       this.timer = setInterval(this.intervalCallback, 1000)
     }
@@ -115,7 +127,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style rel="stylesheet/scss" lang="scss" >
 .el-container {
   height: 91px;
   top: 0;
@@ -127,19 +139,19 @@ export default {
   width: 120px;
   position: relative;
   height: 60px;
-}
-.logo-a {
-  cursor: pointer;
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 120px;
-  height: 33px;
-}
-.logo-img {
-  width: 120px;
-  height: 33px;
+  &-a {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+    height: 33px;
+  }
+  &-img {
+    width: 120px;
+    height: 33px;
+  }
 }
 .sethome {
   cursor: pointer;
@@ -159,34 +171,26 @@ export default {
   border-radius: 20px;
   margin-left: 8px;
 }
+.info {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-align: left;
+  line-height: 20px;
+  font-size: 12px;
+  font-family: Tahoma;
+}
 .time {
-  float: left;
   min-width: 225px;
-  margin-top: 10px;
   margin-left: 92px;
-  text-align: left;
-  line-height: 20px;
-  font-size: 12px;
-  font-family: Tahoma;
 }
-.browser-info {
-  float: left;
+.browser {
   min-width: 150px;
-  margin-top: 10px;
-  margin-left: 20px;
-  text-align: left;
-  line-height: 20px;
-  font-size: 12px;
-  font-family: Tahoma;
 }
-.ips-info {
-  float: left;
+.ips {
   min-width: 310px;
-  margin-top: 10px;
-  margin-left: 20px;
-  text-align: left;
-  line-height: 20px;
-  font-size: 12px;
-  font-family: Tahoma;
+}
+.city {
+  min-width: 130px;
 }
 </style>
