@@ -15,6 +15,9 @@
   <a href="https://github.com/kaisawind/top/releases">
     <img src="https://img.shields.io/github/release/kaisawind/top.svg" alt="GitHub release">
   </a>
+  <a href="https://app.netlify.com/sites/top-kaisawind/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/9e71e743-8ac8-485e-8fe2-e1b736ed9d4e/deploy-status" alt="Netlify Status">
+  </a>
 </p>
 
 # top
