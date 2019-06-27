@@ -104,13 +104,13 @@ export default {
     },
     getTime() {
       const date = new Date()
-      this.time = parseTime(date, '{y}{m}{d}{h}{m}{s}')
-      return parseTime(date, '{y}{m}{d}{h}{m}{s}')
+      this.time = parseTime(date, '{y}{m}{d}{h}{i}{s}')
+      return parseTime(date, '{y}{m}{d}{h}{i}{s}')
     },
     getCNTime() {
       const date = new Date()
-      this.cntime = parseTime(date, '{y}年{m}月{d}日{h}时{m}分{s}秒')
-      return parseTime(date, '{y}年{m}月{d}日{h}时{m}分{s}秒')
+      this.cntime = parseTime(date, '{y}年{m}月{d}日{h}时{i}分{s}秒')
+      return parseTime(date, '{y}年{m}月{d}日{h}时{i}分{s}秒')
     },
     getTimestamp() {
       const date = new Date()

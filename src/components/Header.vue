@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
 .el-container {
-  top: -10px;
+  top: -20px;
   width: 100%;
   height: 99px;
   border-bottom: 1px solid #D1D8E5;
