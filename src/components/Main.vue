@@ -10,19 +10,19 @@
         <el-link class="title" target="_blank" href="https://git.code.tencent.com/">腾讯工蜂</el-link>
         <el-link class="title" target="_blank" href="https://devcloud.huaweicloud.com">华为Git</el-link>
         <el-link class="title" target="_blank" href="https://coding.net">Coding</el-link>
-        <el-link class="title" target="_blank" href="https://coding.net">Coding</el-link>
-        <el-link class="title" target="_blank" href="https://coding.net">Coding</el-link>
-        <el-link class="title" target="_blank" href="https://coding.net">Coding</el-link>
-        <el-link class="title" target="_blank" href="https://coding.net">Coding</el-link>
-        <el-link class="title" target="_blank" href="https://coding.net">Coding</el-link>
-        <el-link class="title last" target="_blank" href="https://coding.net">Coding</el-link>
+        <el-link class="title" target="_blank" href="https://top.kaisawind.com">&emsp;&emsp;&emsp;</el-link>
+        <el-link class="title" target="_blank" href="https://top.kaisawind.com">&emsp;&emsp;&emsp;</el-link>
+        <el-link class="title" target="_blank" href="https://top.kaisawind.com">&emsp;&emsp;&emsp;</el-link>
+        <el-link class="title" target="_blank" href="https://top.kaisawind.com">&emsp;&emsp;&emsp;</el-link>
+        <el-link class="title" target="_blank" href="https://top.kaisawind.com">&emsp;&emsp;&emsp;</el-link>
+        <el-link class="title last" target="_blank" href="https://top.kaisawind.com">&emsp;&emsp;&emsp;</el-link>
       </div>
       <div ref="cloud-site" class="cloud-site">
         <div>
           <ul class="list-items">
             <li v-for="item in user_sites" :key="item.id" class="site-item">
               <div>
-                <el-link class="item-link" :href="item.href" target="_blank" :style="{backgroundImage: 'url(' + item.icon +')'}">
+                <el-link class="item-link" :underline="false" :href="item.href" target="_blank" :style="{backgroundImage: 'url(' + item.icon +')'}">
                   {{ item.title }}
                 </el-link>
               </div>
@@ -34,7 +34,7 @@
           <ul class="list-items">
             <li v-for="item in user_sites" :key="item.id" class="site-item">
               <div>
-                <el-link class="item-link" :href="item.href" target="_blank" :style="{backgroundImage: 'url(' + item.icon +')'}">
+                <el-link class="item-link" :underline="false" :href="item.href" target="_blank" :style="{backgroundImage: 'url(' + item.icon +')'}">
                   {{ item.title }}
                 </el-link>
               </div>
@@ -49,7 +49,7 @@
             <ul class="list-items">
               <li v-for="item in user_sites" :key="item.id" class="site-item">
                 <div>
-                  <el-link class="item-link" :href="item.href" target="_blank" :style="{backgroundImage: 'url(' + item.icon +')'}">
+                  <el-link class="item-link" :underline="false" :href="item.href" target="_blank" :style="{backgroundImage: 'url(' + item.icon +')'}">
                     {{ item.title }}
                   </el-link>
                 </div>
@@ -187,5 +187,8 @@ ul, li {
 .collapse {
   position: absolute;
   bottom: 0;
+}
+.item-link.el-link.el-link--default:hover {
+  color: red;
 }
 </style>
