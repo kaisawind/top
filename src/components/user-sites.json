@@ -43,16 +43,16 @@
     },
     {
       "id": "6",
-      "title": "docker hub",
+      "title": "docker",
       "href": "https://hub.docker.com",
       "icon": "https://hub.docker.com/favicon.ico",
       "status": "1"
     },
     {
       "id": "7",
-      "title": "github7",
-      "href": "https://www.baidu.com",
-      "icon": "https://gss0.bdstatic.com/5bVWsj_p_tVS5dKfpU_Y_D3/qiusuo_icon/5a6639075515a8e27e0b1336db2300c1.ico",
+      "title": "starchart",
+      "href": "https://starchart.cc",
+      "icon": "https://starchart.cc/static/favicon.png",
       "status": "1"
     },
     {
