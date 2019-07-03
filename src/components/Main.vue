@@ -32,7 +32,7 @@
         <el-divider />
         <div>
           <ul class="list-items">
-            <li v-for="item in user_sites" :key="item.id" class="site-item">
+            <li v-for="item in common_sites" :key="item.id" class="site-item">
               <div>
                 <el-link class="item-link" :underline="false" :href="item.href" target="_blank" :style="{backgroundImage: 'url(' + item.icon +')'}">
                   {{ item.title }}
@@ -64,18 +64,21 @@
 </template>
 
 <script>
-import user_sites from './user-sites.json'
+import user_sites from './json/user-sites.json'
+import common_sites from './json/common-sites.json'
 
 export default {
   name: 'Main',
   data() {
     return {
       showCoolSite: false,
-      user_sites: []
+      user_sites: [],
+      common_sites: []
     }
   },
   mounted() {
     this.user_sites = user_sites
+    this.common_sites = common_sites
   },
   methods: {
     onhandleOpen() {
