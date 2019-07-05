@@ -40,5 +40,19 @@
       "href": "https://www.java.com",
       "icon": "https://www.java.com/favicon.ico",
       "status": "1"
+    },
+    {
+      "id": "4",
+      "title": "Mqtt",
+      "href": "https://mqtt.org/",
+      "icon": "https://mqtt.org/new/wp-content/uploads/2011/08/mqttorg-glow.png",
+      "status": "1"
+    },
+    {
+      "id": "4",
+      "title": "HiveMQ",
+      "href": "https://www.hivemq.com/",
+      "icon": "https://www.hivemq.com/favicon.ico",
+      "status": "1"
     }
   ]
