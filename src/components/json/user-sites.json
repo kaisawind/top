@@ -7,6 +7,27 @@
       "status": "1"
     },
     {
+      "id": "0",
+      "title": "Vue.js",
+      "href": "https://cn.vuejs.org/",
+      "icon": "https://cn.vuejs.org/images/icons/favicon-32x32.png",
+      "status": "1"
+    },
+    {
+      "id": "0",
+      "title": "Angular",
+      "href": "https://www.angular.cn/",
+      "icon": "https://www.angular.cn/assets/images/favicons/favicon.ico",
+      "status": "1"
+    },
+    {
+      "id": "0",
+      "title": "React",
+      "href": "https://reactjs.org/",
+      "icon": "https://reactjs.org/favicon.ico",
+      "status": "1"
+    },
+    {
       "id": "1",
       "title": "travis-ci.org",
       "href": "https://travis-ci.org",
