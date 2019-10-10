@@ -46,11 +46,18 @@
       <el-collapse-transition>
         <div v-show="showCoolSite" class="cool-site">
           <div>
-            <ul class="list-items">
-              <li v-for="item in cool_sites" :key="item.id" class="site-item">
+            <ul v-for="item in cool_sites" :key="item.id" class="list-items">
+              <li class="site-item">
                 <div>
                   <el-link class="item-link" :underline="false" :href="item.href" target="_blank" :style="{backgroundImage: 'url(' + item.icon +')'}">
                     {{ item.title }}
+                  </el-link>
+                </div>
+              </li>
+              <li v-for="site in item.sites" :key="site.id" class="site-item">
+                <div>
+                  <el-link class="item-link" :underline="false" :href="site.href" target="_blank" :style="{backgroundImage: 'url(' + site.icon +')'}">
+                    {{ site.title }}
                   </el-link>
                 </div>
               </li>

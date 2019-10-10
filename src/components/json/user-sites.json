@@ -1,27 +1,6 @@
 [
     {
       "id": "0",
-      "title": "npm",
-      "href": "https://www.npmjs.com/",
-      "icon": "https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png",
-      "status": "1"
-    },
-    {
-      "id": "0",
-      "title": "Vue.js",
-      "href": "https://cn.vuejs.org/",
-      "icon": "https://cn.vuejs.org/images/icons/favicon-32x32.png",
-      "status": "1"
-    },
-    {
-      "id": "0",
-      "title": "Angular",
-      "href": "https://www.angular.cn/",
-      "icon": "https://www.angular.cn/assets/images/favicons/favicon.ico",
-      "status": "1"
-    },
-    {
-      "id": "0",
       "title": "React",
       "href": "https://reactjs.org/",
       "icon": "https://reactjs.org/favicon.ico",
@@ -81,6 +60,27 @@
       "title": "goreportcard",
       "href": "https://goreportcard.com",
       "icon": "https://goreportcard.com/favicon.ico",
+      "status": "1"
+    },
+    {
+      "id": "9",
+      "title": "npm",
+      "href": "https://www.npmjs.com/",
+      "icon": "https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png",
+      "status": "1"
+    },
+    {
+      "id": "10",
+      "title": "Vue.js",
+      "href": "https://cn.vuejs.org/",
+      "icon": "https://cn.vuejs.org/images/icons/favicon-32x32.png",
+      "status": "1"
+    },
+    {
+      "id": "11",
+      "title": "Angular",
+      "href": "https://www.angular.cn/",
+      "icon": "https://www.angular.cn/assets/images/favicons/favicon.ico",
       "status": "1"
     }
   ]
