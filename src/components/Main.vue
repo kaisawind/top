@@ -47,7 +47,7 @@
         <div v-show="showCoolSite" class="cool-site">
           <div>
             <ul class="list-items">
-              <li v-for="item in user_sites" :key="item.id" class="site-item">
+              <li v-for="item in cool_sites" :key="item.id" class="site-item">
                 <div>
                   <el-link class="item-link" :underline="false" :href="item.href" target="_blank" :style="{backgroundImage: 'url(' + item.icon +')'}">
                     {{ item.title }}
@@ -66,6 +66,7 @@
 <script>
 import user_sites from './json/user-sites.json'
 import common_sites from './json/common-sites.json'
+import cool_sites from './json/cool-sites.json'
 
 export default {
   name: 'Main',
@@ -73,12 +74,14 @@ export default {
     return {
       showCoolSite: false,
       user_sites: [],
-      common_sites: []
+      common_sites: [],
+      cool_sites: []
     }
   },
   mounted() {
     this.user_sites = user_sites
     this.common_sites = common_sites
+    this.cool_sites = cool_sites
   },
   methods: {
     onhandleOpen() {
