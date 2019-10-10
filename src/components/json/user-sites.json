@@ -3,28 +3,28 @@
       "id": "0",
       "title": "React",
       "href": "https://reactjs.org/",
-      "icon": "https://reactjs.org/favicon.ico",
+      "icon": "ico/reactjs.ico",
       "status": "1"
     },
     {
       "id": "1",
       "title": "travis-ci.org",
       "href": "https://travis-ci.org",
-      "icon": "https://cdn.travis-ci.org/images/favicon-076a22660830dc325cc8ed70e7146a59.png",
+      "icon": "ico/travis-ci.png",
       "status": "1"
     },
     {
       "id": "2",
       "title": "travis-ci.com",
       "href": "https://travis-ci.com",
-      "icon": "https://cdn.travis-ci.com/images/favicon-076a22660830dc325cc8ed70e7146a59.png",
+      "icon": "ico/travis-ci.png",
       "status": "1"
     },
     {
       "id": "3",
       "title": "netlify",
       "href": "https://app.netlify.com",
-      "icon": "https://app.netlify.com/favicon-32x32.png",
+      "icon": "ico/netlify.png",
       "status": "1"
     },
     {
@@ -38,49 +38,49 @@
       "id": "5",
       "title": "fossa",
       "href": "https://app.fossa.com",
-      "icon": "https://app.fossa.com/img/favicon.ico",
+      "icon": "ico/fossa.ico",
       "status": "1"
     },
     {
       "id": "6",
       "title": "docker",
       "href": "https://hub.docker.com",
-      "icon": "https://hub.docker.com/favicon.ico",
+      "icon": "ico/docker.ico",
       "status": "1"
     },
     {
       "id": "7",
       "title": "starchart",
       "href": "https://starchart.cc",
-      "icon": "https://starchart.cc/static/favicon.png",
+      "icon": "ico/starchart.png",
       "status": "1"
     },
     {
       "id": "8",
       "title": "goreportcard",
       "href": "https://goreportcard.com",
-      "icon": "https://goreportcard.com/favicon.ico",
+      "icon": "ico/goreportcard.ico",
       "status": "1"
     },
     {
       "id": "9",
       "title": "npm",
       "href": "https://www.npmjs.com/",
-      "icon": "https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png",
+      "icon": "ico/npmjs.png",
       "status": "1"
     },
     {
       "id": "10",
       "title": "Vue.js",
       "href": "https://cn.vuejs.org/",
-      "icon": "https://cn.vuejs.org/images/icons/favicon-32x32.png",
+      "icon": "ico/vuejs.png",
       "status": "1"
     },
     {
       "id": "11",
       "title": "Angular",
       "href": "https://www.angular.cn/",
-      "icon": "https://www.angular.cn/assets/images/favicons/favicon.ico",
+      "icon": "ico/angular.ico",
       "status": "1"
     }
   ]

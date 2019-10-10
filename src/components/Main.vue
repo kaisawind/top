@@ -49,7 +49,7 @@
             <ul v-for="item in cool_sites" :key="item.id" class="list-items">
               <li class="site-item">
                 <div>
-                  <el-link class="item-link" :underline="false" :href="item.href" target="_blank" :style="{backgroundImage: 'url(' + item.icon +')'}">
+                  <el-link class="item-link" :underline="false" :href="item.href" target="_blank" :style="{color: '#0AA770', backgroundImage: 'url(' + item.icon +')'}">
                     {{ item.title }}
                   </el-link>
                 </div>

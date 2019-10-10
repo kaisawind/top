@@ -3,28 +3,28 @@
       "id": "0",
       "title": "play.golang",
       "href": "https://play.golang.org/",
-      "icon": "https://play.golang.org/favicon.ico",
+      "icon": "ico/golang.ico",
       "status": "1"
     },
     {
       "id": "1",
       "title": "nodejs",
       "href": "https://nodejs.org",
-      "icon": "https://nodejs.org/static/favicon.png",
+      "icon": "ico/nodejs.png",
       "status": "1"
     },
     {
       "id": "2",
       "title": "python",
       "href": "https://www.python.org/",
-      "icon": "https://www.python.org/static/favicon.ico",
+      "icon": "ico/python.ico",
       "status": "1"
     },
     {
       "id": "3",
       "title": "vlang",
       "href": "http://vlang.org/",
-      "icon": "http://vlang.org/favicon.ico",
+      "icon": "ico/vlang.ico",
       "status": "1"
     },
     {
@@ -38,7 +38,7 @@
       "id": "5",
       "title": "Mqtt",
       "href": "https://mqtt.org/",
-      "icon": "https://mqtt.org/new/wp-content/uploads/2011/08/mqttorg-glow.png",
+      "icon": "favicon.ico",
       "status": "1"
     },
     {
@@ -52,7 +52,7 @@
       "id": "7",
       "title": "golang",
       "href": "https://golang.google.cn/",
-      "icon": "https://golang.google.cn/favicon.ico",
+      "icon": "ico/golang.ico",
       "status": "1"
     }
   ]
