@@ -54,5 +54,12 @@
       "href": "https://golang.google.cn/",
       "icon": "ico/golang.ico",
       "status": "1"
+    },
+    {
+      "id": "8",
+      "title": "rabbitmq",
+      "href": "https://www.rabbitmq.com//",
+      "icon": "ico/rabbitmq.ico",
+      "status": "1"
     }
   ]
