@@ -58,8 +58,15 @@
     {
       "id": "8",
       "title": "rabbitmq",
-      "href": "https://www.rabbitmq.com//",
+      "href": "https://www.rabbitmq.com/",
       "icon": "ico/rabbitmq.ico",
+      "status": "1"
+    },
+    {
+      "id": "9",
+      "title": "erlang",
+      "href": "https://www.erlang.org",
+      "icon": "ico/erlang.ico",
       "status": "1"
     }
   ]
