@@ -68,5 +68,12 @@
       "href": "https://www.erlang.org",
       "icon": "ico/erlang.ico",
       "status": "1"
+    },
+    {
+      "id": "10",
+      "title": "mongo",
+      "href": "https://docs.mongodb.com",
+      "icon": "ico/mongo.ico",
+      "status": "1"
     }
   ]
