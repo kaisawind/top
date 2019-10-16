@@ -82,5 +82,12 @@
       "href": "https://www.angular.cn/",
       "icon": "ico/angular.ico",
       "status": "1"
+    },
+    {
+      "id": "12",
+      "title": "GitHub Gist",
+      "href": "https://gist.github.com",
+      "icon": "ico/github.ico",
+      "status": "1"
     }
   ]
