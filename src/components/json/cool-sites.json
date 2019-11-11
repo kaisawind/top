@@ -73,16 +73,16 @@
         "sites": [
           {
             "id": "0",
-            "title": "npm",
-            "href": "https://www.npmjs.com/",
-            "icon": "https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png",
+            "title": "coap",
+            "href": "http://coap.technology/",
+            "icon": "ico/udp.png",
             "status": "1"
           },
           {
             "id": "1",
-            "title": "Vue.js",
-            "href": "https://cn.vuejs.org/",
-            "icon": "https://cn.vuejs.org/images/icons/favicon-32x32.png",
+            "title": "mqtt",
+            "href": "https://mqtt.org/",
+            "icon": "ico/udp.png",
             "status": "1"
           },
           {
