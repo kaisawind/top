@@ -75,5 +75,12 @@
       "href": "https://docs.mongodb.com",
       "icon": "ico/mongo.ico",
       "status": "1"
+    },
+    {
+      "id": "11",
+      "title": "godev",
+      "href": "https://pkg.go.dev/",
+      "icon": "ico/golang.ico",
+      "status": "1"
     }
   ]
