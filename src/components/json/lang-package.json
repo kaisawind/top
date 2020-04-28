@@ -1,0 +1,51 @@
+[
+    {
+        "id": "0",
+        "title": "Go(pkg)",
+        "href": "https://pkg.go.dev/",
+        "icon": "ico/golang.ico",
+        "status": "1"
+    },
+    {
+        "id": "1",
+        "title": "Node.js(npm)",
+        "href": "https://www.npmjs.com/",
+        "icon": "ico/nodejs.png",
+        "status": "1"
+    },
+    {
+        "id": "2",
+        "title": "Python(pypi)",
+        "href": "https://pypi.org/",
+        "icon": "ico/python.ico",
+        "status": "1"
+    },
+    {
+        "id": "3",
+        "title": "vlang(vpm)",
+        "href": "https://vpm.best/",
+        "icon": "ico/vlang.ico",
+        "status": "1"
+    },
+    {
+        "id": "4",
+        "title": "Java(mvn)",
+        "href": "https://mvnrepository.com/",
+        "icon": "ico/java.ico",
+        "status": "1"
+    },
+    {
+        "id": "5",
+        "title": "Rust(crates)",
+        "href": "https://crates.io/",
+        "icon": "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE0NCIgd2lkdGg9IjE0NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtNzEuMDUgMjMuNjhjLTI2LjA2IDAtNDcuMjcgMjEuMjItNDcuMjcgNDcuMjdzMjEuMjIgNDcuMjcgNDcuMjcgNDcuMjcgNDcuMjctMjEuMjIgNDcuMjctNDcuMjctMjEuMjItNDcuMjctNDcuMjctNDcuMjd6bS0uMDcgNC4yYTMuMSAzLjExIDAgMCAxIDMuMDIgMy4xMSAzLjExIDMuMTEgMCAwIDEgLTYuMjIgMCAzLjExIDMuMTEgMCAwIDEgMy4yLTMuMTF6bTcuMTIgNS4xMmEzOC4yNyAzOC4yNyAwIDAgMSAyNi4yIDE4LjY2bC0zLjY3IDguMjhjLS42MyAxLjQzLjAyIDMuMTEgMS40NCAzLjc1bDcuMDYgMy4xM2EzOC4yNyAzOC4yNyAwIDAgMSAuMDggNi42NGgtMy45M2MtLjM5IDAtLjU1LjI2LS41NS42NHYxLjhjMCA0LjI0LTIuMzkgNS4xNy00LjQ5IDUuNC0yIC4yMy00LjIxLS44NC00LjQ5LTIuMDYtMS4xOC02LjYzLTMuMTQtOC4wNC02LjI0LTEwLjQ5IDMuODUtMi40NCA3Ljg1LTYuMDUgNy44NS0xMC44NyAwLTUuMjEtMy41Ny04LjQ5LTYtMTAuMS0zLjQyLTIuMjUtNy4yLTIuNy04LjIyLTIuN2gtNDAuNmEzOC4yNyAzOC4yNyAwIDAgMSAyMS40MS0xMi4wOGw0Ljc5IDUuMDJjMS4wOCAxLjEzIDIuODcgMS4xOCA0IC4wOXptLTQ0LjIgMjMuMDJhMy4xMSAzLjExIDAgMCAxIDMuMDIgMy4xMSAzLjExIDMuMTEgMCAwIDEgLTYuMjIgMCAzLjExIDMuMTEgMCAwIDEgMy4yLTMuMTF6bTc0LjE1LjE0YTMuMTEgMy4xMSAwIDAgMSAzLjAyIDMuMTEgMy4xMSAzLjExIDAgMCAxIC02LjIyIDAgMy4xMSAzLjExIDAgMCAxIDMuMi0zLjExem0tNjguMjkuNWg1LjQydjI0LjQ0aC0xMC45NGEzOC4yNyAzOC4yNyAwIDAgMSAtMS4yNC0xNC42MWw2LjctMi45OGMxLjQzLS42NCAyLjA4LTIuMzEgMS40NC0zLjc0em0yMi42Mi4yNmgxMi45MWMuNjcgMCA0LjcxLjc3IDQuNzEgMy44IDAgMi41MS0zLjEgMy40MS01LjY1IDMuNDFoLTExLjk4em0wIDE3LjU2aDkuODljLjkgMCA0LjgzLjI2IDYuMDggNS4yOC4zOSAxLjU0IDEuMjYgNi41NiAxLjg1IDguMTcuNTkgMS44IDIuOTggNS40IDUuNTMgNS40aDE2LjE0YTM4LjI3IDM4LjI3IDAgMCAxIC0zLjU0IDQuMWwtNi41Ny0xLjQxYy0xLjUzLS4zMy0zLjA0LjY1LTMuMzcgMi4xOGwtMS41NiA3LjI4YTM4LjI3IDM4LjI3IDAgMCAxIC0zMS45MS0uMTVsLTEuNTYtNy4yOGMtLjMzLTEuNTMtMS44My0yLjUxLTMuMzYtMi4xOGwtNi40MyAxLjM4YTM4LjI3IDM4LjI3IDAgMCAxIC0zLjMyLTMuOTJoMzEuMjdjLjM1IDAgLjU5LS4wNi41OS0uMzl2LTExLjA2YzAtLjMyLS4yNC0uMzktLjU5LS4zOWgtOS4xNXptLTE0LjQzIDI1LjMzYTMuMTEgMy4xMSAwIDAgMSAzLjAyIDMuMTEgMy4xMSAzLjExIDAgMCAxIC02LjIyIDAgMy4xMSAzLjExIDAgMCAxIDMuMi0zLjExem00Ni4wNS4xNGEzLjExIDMuMTEgMCAwIDEgMy4wMiAzLjExIDMuMTEgMy4xMSAwIDAgMSAtNi4yMiAwIDMuMTEgMy4xMSAwIDAgMSAzLjItMy4xMXoiLz48cGF0aCBkPSJtMTE1LjY4IDcwLjk1YTQ0LjYzIDQ0LjYzIDAgMCAxIC00NC42MyA0NC42MyA0NC42MyA0NC42MyAwIDAgMSAtNDQuNjMtNDQuNjMgNDQuNjMgNDQuNjMgMCAwIDEgNDQuNjMtNDQuNjMgNDQuNjMgNDQuNjMgMCAwIDEgNDQuNjMgNDQuNjN6bS0uODQtNC4zMSA2Ljk2IDQuMzEtNi45NiA0LjMxIDUuOTggNS41OS03LjY2IDIuODcgNC43OCA2LjY1LTguMDkgMS4zMiAzLjQgNy40Ni04LjE5LS4yOSAxLjg4IDcuOTgtNy45OC0xLjg4LjI5IDguMTktNy40Ni0zLjQtMS4zMiA4LjA5LTYuNjUtNC43OC0yLjg3IDcuNjYtNS41OS01Ljk4LTQuMzEgNi45Ni00LjMxLTYuOTYtNS41OSA1Ljk4LTIuODctNy42Ni02LjY1IDQuNzgtMS4zMi04LjA5LTcuNDYgMy40LjI5LTguMTktNy45OCAxLjg4IDEuODgtNy45OC04LjE5LjI5IDMuNC03LjQ2LTguMDktMS4zMiA0Ljc4LTYuNjUtNy42Ni0yLjg3IDUuOTgtNS41OS02Ljk2LTQuMzEgNi45Ni00LjMxLTUuOTgtNS41OSA3LjY2LTIuODctNC43OC02LjY1IDguMDktMS4zMi0zLjQtNy40NiA4LjE5LjI5LTEuODgtNy45OCA3Ljk4IDEuODgtLjI5LTguMTkgNy40NiAzLjQgMS4zMi04LjA5IDYuNjUgNC43OCAyLjg3LTcuNjYgNS41OSA1Ljk4IDQuMzEtNi45NiA0LjMxIDYuOTYgNS41OS01Ljk4IDIuODcgNy42NiA2LjY1LTQuNzggMS4zMiA4LjA5IDcuNDYtMy40LS4yOSA4LjE5IDcuOTgtMS44OC0xLjg4IDcuOTggOC4xOS0uMjktMy40IDcuNDYgOC4wOSAxLjMyLTQuNzggNi42NSA3LjY2IDIuODd6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjMiLz48L3N2Zz4=",
+        "status": "1"
+    },
+    {
+        "id": "6",
+        "title": "Dart(pub)",
+        "href": "https://pub.flutter-io.cn/",
+        "icon": "ico/dart.png",
+        "status": "1"
+    }
+]
