@@ -31,48 +31,6 @@
           </ul>
         </div>
         <div class="height" />
-        <!-- 编程语言 -->
-        <el-divider>编程语言</el-divider>
-        <div>
-          <ul class="list-items">
-            <li v-for="item in lang_sites" :key="item.id" class="site-item">
-              <div>
-                <el-link class="item-link" :underline="false" :href="item.href" target="_blank" :style="{backgroundImage: 'url(' + item.icon +')'}">
-                  {{ item.title }}
-                </el-link>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="height" />
-        <!-- 在线编程 -->
-        <el-divider>在线编程</el-divider>
-        <div>
-          <ul class="list-items">
-            <li v-for="item in lang_play" :key="item.id" class="site-item">
-              <div>
-                <el-link class="item-link" :underline="false" :href="item.href" target="_blank" :style="{backgroundImage: 'url(' + item.icon +')'}">
-                  {{ item.title }}
-                </el-link>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="height" />
-        <!-- 语言包管理 -->
-        <el-divider>语言包管理</el-divider>
-        <div>
-          <ul class="list-items">
-            <li v-for="item in lang_package" :key="item.id" class="site-item">
-              <div>
-                <el-link class="item-link" :underline="false" :href="item.href" target="_blank" :style="{backgroundImage: 'url(' + item.icon +')'}">
-                  {{ item.title }}
-                </el-link>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="height" />
         <el-divider />
         <!-- 其他网站 -->
         <div>
@@ -119,30 +77,21 @@
 import user_sites from './json/user-sites.json'
 import common_sites from './json/common-sites.json'
 import cool_sites from './json/cool-sites.json'
-import lang_sites from './json/lang-sites.json'
-import lang_play from './json/lang-play.json'
-import lang_package from './json/lang-package.json'
 
 export default {
   name: 'Main',
   data() {
     return {
-      showCoolSite: false,
+      showCoolSite: true,
       user_sites: [],
       common_sites: [],
-      cool_sites: [],
-      lang_sites: [],
-      lang_play: [],
-      lang_package: []
+      cool_sites: []
     }
   },
   mounted() {
     this.user_sites = user_sites
     this.common_sites = common_sites
     this.cool_sites = cool_sites
-    this.lang_sites = lang_sites
-    this.lang_play = lang_play
-    this.lang_package = lang_package
   },
   methods: {
     onhandleOpen() {
