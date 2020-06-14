@@ -217,9 +217,9 @@
       },
       {
         "id": "2",
-        "title": "Angular",
-        "href": "https://www.angular.cn/",
-        "icon": "ico/angular.ico",
+        "title": "algorithm",
+        "href": "https://algorithm-visualizer.org/",
+        "icon": "ico/algorithm.png",
         "status": "1"
       },
       {
